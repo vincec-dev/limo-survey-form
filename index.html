@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    @import 'index.css';
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Chicago's Limo Service<br>Survey Form</h1>
+    <p id="description">We appreciate and value your feedback.</p>
+  </header>
+  <div id="inner-area">
+    <form action="" id="survey-form">
+      <div class="single-row">
+        <div class="left-row">
+          <label for="name" id="name-label">Name:</label>
+        </div>
+        <div class="right-row">
+          <input type="text" class="input-field" name="name" value="" id="name" placeholder="your name here" required>
+        </div>
+      </div>
+      <div class="single-row">
+        <div class="left-row">
+          <label for="email" id="email-label">Email:</label>
+        </div>
+        <div class="right-row">
+          <input type="email" class="input-field" name="" id="email" placeholder="your email here" required>
+        </div>
+      </div>
+      <div class="single-row">
+        <div class="left-row">
+          <label for="reservation-type" id="reservation-type-label">What was your reservation occasion?</label>
+        </div>
+        <div class="right-row">
+          <select name="reservation-type" class="dropdown" id="dropdown">
+                    <option value="wedding">Wedding</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="sweet-16">Sweet 16</option>
+                    <option value="bachelorette-party">Bachelorette Party</option>
+                    <option value="night-out">Night Out</option>
+                    <option value="anniversary">Anniversary</option>
+                </select>
+        </div>
+      </div>
+      <div class="single-row">
+        <div class="left-row">
+          <label for="number" id="number-label">Overall Experience Rating:</label>
+          <p class="help-text">On a scale from 1-10, with 10 being excellent.</p>
+        </div>
+        <div class="right-row">
+          <input type="number" class="input-field" name="" value="10" id="number" min="1" max="10" placeholder="rating">
+        </div>
+      </div>
+      <div class="single-row">
+        <div class="left-row">
+          <label for="driver-rating" id="driver-rating-label">How would you rate your driver?</label>
+        </div>
+        <div class="right-row" id="rating-div">
+          <div class="rating-option"><input type="radio" name="driver-rating" value="Excellent">Excellent</div>
+          <div class="rating-option"><input type="radio" name="driver-rating" value="Good">Good</div>
+          <div class="rating-option"><input type="radio" name="driver-rating" value="OK">OK</div>
+          <div class="rating-option"><input type="radio" name="driver-rating" value="Bad">Bad</div>
+        </div>
+      </div>
+      <div class="single-row">
+        <div class="left-row">
+          <label for="missing" id="missing-label">Please select any of the following if they were missing on your reservation day:</label>
+        </div>
+        <div class="right-row" id="checkbox-div">
+          <div class="checkbox-selection"><input type="checkbox" name="waters" id="waters" value="waters">Waters</div>
+          <div class="checkbox-selection"><input type="checkbox" name="champagne" id="champagne" value="champagne">Champagne</div>
+          <div class="checkbox-selection"><input type="checkbox" name="ice" id="ice" value="ice">Ice</div>
+          <div class="checkbox-selection"><input type="checkbox" name="napkins" id="napkins" value="napkins">Napkins</div>
+          <div class="checkbox-selection"><input type="checkbox" name="aux-cord" id="aux-cord" value="aux-cord">Aux-cord</div>
+        </div>
+      </div>
+      <div class="single-row">
+        <div class="left-row">
+          <label for="comments" id="comments-label">Do you have any comments you would like to share with us?</label>
+        </div>
+        <div class="right-row">
+          <textarea name="comments" class="input-field" id="comments" placeholder="enter your comments here"></textarea>
+        </div>
+      </div>
+      <button type="submit" name="submit" id="submit" value="submit">SUBMIT</button>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+html, body {
+  background: linear-gradient(45deg, #ADA996, #F2F2F2, #DBDBDB, #EAEAEA);
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#inner-area {
+  background-color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 15px 35px 15px;
+  opacity: .9;
+  width: 75%;
+}
+
+label {
+  font-weight: 900;
+}
+
+#title {
+  margin-top: 25px;
+  padding-top: 30px;
+}
+
+#description {
+  margin-bottom: 35px;
+}
+
+.left-row {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: right;
+  vertical-align: top;
+  width: 40%;
+}
+
+.right-row {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: 48%;
+}
+
+.input-field {
+  border: 1px dotted #c0c0c0;
+  border-radius: 4px;
+  height: 20px;
+  margin: 10px;
+  padding: 5px;
+  width: 250px;
+}
+
+.dropdown {
+  border-radius: 4px;
+  height: 35px;
+  margin: 10px;
+  padding: 5px;
+  width: 150px;
+}
+
+.rating-option {
+  padding-bottom: 7px;
+  padding-left: 10px;
+}
+
+.help-text {
+  color: #bb9b49;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.checkbox-selection {
+  padding-bottom: 7px;
+  padding-left: 10px;
+}
+
+#rating-div, #checkbox-div {
+  padding-top: 15px;
+}
+
+#comments {
+  height: 75px;
+}
+
+#submit {
+  background-color: #ebd197;
+  border-radius: 10px;
+  color: black;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding: 15px;
+  width: 175px;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .left-row {
+    width: 100%;
+    text-align: left;
+  }
+  .right-row {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
